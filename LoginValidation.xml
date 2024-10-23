@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE suite SYSTEM 'http://testng.org/testng-1.0.dtd'>
+<suite name='IVIS Automation test suite' >
+
+<test name="chromeWindowsLocal1">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="browserVersion" value="46.0"></parameter>
+		<parameter name="platformName" value="Windows 10"></parameter>
+		<parameter name="environment" value="local"></parameter>
+
+		 <classes>
+			<class name="com.ivis.iportal.script.TC_ConfigCamera">
+				<methods>
+					<include name="iportalLoginValidation"/>
+				</methods>
+			 </class>
+		 </classes>
+	</test>
+</suite>
