@@ -41,6 +41,7 @@ public class TC_ConfigCamera extends TestBase {
                 //lb.invalidLogin(url, user, pass);
                 System.out.println("iPortal loggedin successfully2");
 
+
             }
 
         } catch (Exception e) {
