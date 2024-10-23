@@ -37,8 +37,8 @@ public class TC_ConfigCamera extends TestBase {
                 // https://www.lambdatest.com/blog/extent-reports-in-selenium/
                 loginLib lb = new loginLib(WEBDRIVER_THREADLOCAL.get());
                 System.out.println("iPortal loggedin successfully");
-                //lb.testLogin(url, user, pass);
-                lb.invalidLogin(url, user, pass);
+                lb.testLogin(url, user, pass);
+                //lb.invalidLogin(url, user, pass);
 
             }
 
