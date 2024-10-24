@@ -29,18 +29,16 @@ public class TC_ConfigCamera extends TestBase {
     }
 
     @Test(priority = 0, dataProvider = "loginValidation")
-    public void iportalLoginValidation(String url, String runmode, String user, String pass) throws Throwable {
+    public void iportalLoginValidation(String url, String runmode, String user, String pass, String invalidpassword) throws Throwable {
         try {
             if (runmode.equalsIgnoreCase("Yes")) {
 
                 ReportHelper.createTest("Test_" + url, "For User" + user);
                 // https://www.lambdatest.com/blog/extent-reports-in-selenium/
                 loginLib lb = new loginLib(WEBDRIVER_THREADLOCAL.get());
-                System.out.println("iPortal loggedin successfully");
-                lb.testLogin(url, user, pass);
-                //lb.invalidLogin(url, user, pass);
-                //System.out.println("iPortal loggedin successfully2");
-
+                lb.invalidLogin(url, user, invalidpassword);
+                lb.validLogin(url, user, pass);
+                System.out.println("test methods executed successfully");
             }
 
         } catch (Exception e) {
