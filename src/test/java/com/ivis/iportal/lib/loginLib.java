@@ -20,7 +20,7 @@ public class loginLib {
         this.commonutils = new CommonUtils(driver);
     }
 
-    public void testLogin(String url, String user, String pwd) throws Throwable {
+    public void validLogin(String url, String user, String pwd) throws Throwable {
 
 
         new LoginPage().loginPage();
@@ -32,11 +32,11 @@ public class loginLib {
         action.type(LoginPage.userName, user, "Username");
         action.type(LoginPage.password, pwd, "Password");
         action.click(LoginPage.loginBtn, "Login Button");
+        System.out.println("Login Button clicked");
 
     }
 
-    public void invalidLogin(String url, String user, String pwd) throws Throwable {
-
+    public void invalidLogin(String url, String user, String invalidpassword) throws Throwable {
 
         new LoginPage().loginPage();
         driver.manage().deleteAllCookies();
@@ -45,9 +45,11 @@ public class loginLib {
         //driver.findElement(By.xpath("//div[@class='css-1gsuzdn-inputContainer']/input")).sendKeys(user);
         commonutils.searchFirstElement(LoginPage.userName, 2, "UserName");
         action.type(LoginPage.userName, user, "Username");
-        action.type(LoginPage.password, pwd, "Password");
+        action.type(LoginPage.password, invalidpassword, "Password");
         action.click(LoginPage.loginBtn, "Login Button");
-        System.out.println("invalid login");
+        commonutils.searchTextElement(LoginPage.invaliErrorMessage, 2, "Error message");
+        commonutils.checkMessage(LoginPage.invaliErrorMessage);
+        System.out.println("invalid login Message id displayed");
 
     }
 }
