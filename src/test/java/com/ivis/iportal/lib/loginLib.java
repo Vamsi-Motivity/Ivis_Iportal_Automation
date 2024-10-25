@@ -48,7 +48,7 @@ public class loginLib {
         action.type(LoginPage.password, invalidpassword, "Password");
         action.click(LoginPage.loginBtn, "Login Button");
         commonutils.searchTextElement(LoginPage.invaliErrorMessage, 2, "Error message");
-        commonutils.checkMessage(LoginPage.invaliErrorMessage);
+        commonutils.checkMessage(LoginPage.invaliErrorMessage, 2);
         System.out.println("invalid login Message id displayed");
 
     }
