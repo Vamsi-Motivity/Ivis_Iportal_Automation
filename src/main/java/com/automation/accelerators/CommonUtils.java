@@ -145,4 +145,18 @@ public class CommonUtils {
         return status;
     }
 
+    // Common method to check for an element-based message (e.g., success/error message)
+    public String checkMessage(By locator, long delaytime) {
+        try {
+
+            WebDriverWait errorMessageElement = new WebDriverWait(driver, Duration.ofMinutes(delaytime));
+            errorMessageElement.until(ExpectedConditions.visibilityOfElementLocated(locator));
+            WebElement messageElement = driver.findElement(locator);
+            return messageElement.getText();  // Return the text of the message element
+            //ReportHelper.log(Status.INFO, "Message found");
+        } catch (Exception e) {
+            return "Message not found";
+        }
+    }
+
 }
