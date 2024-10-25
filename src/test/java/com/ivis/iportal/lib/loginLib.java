@@ -26,6 +26,9 @@ public class loginLib {
         new LoginPage().loginPage();
         driver.manage().deleteAllCookies();
         driver.get(url);
+        //test commit check
+        //test
+
         ReportHelper.log(Status.PASS, "Navigated To URL" + url);
         //driver.findElement(By.xpath("//div[@class='css-1gsuzdn-inputContainer']/input")).sendKeys(user);
         commonutils.searchFirstElement(LoginPage.userName, 2, "UserName");
