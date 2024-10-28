@@ -1,211 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-26T01:25:58 IST" name="IVIS Automation test suite" finished-at="2024-10-26T01:26:12 IST" duration-ms="13798">
+  <suite started-at="2024-10-28T15:41:24 IST" name="IVIS Automation test suite" finished-at="2024-10-28T15:41:25 IST" duration-ms="977">
     <groups>
     </groups>
-    <test started-at="2024-10-26T01:25:58 IST" name="chromeWindowsLocal1" finished-at="2024-10-26T01:26:12 IST" duration-ms="13798">
-      <class name="com.ivis.iportal.script.TC_ConfigCamera">
-        <test-method is-config="true" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.ivis.iportal.script.TC_ConfigCamera@1dd92fe2]" started-at="2024-10-26T01:25:58 IST" name="beforeSuite" finished-at="2024-10-26T01:25:58 IST" duration-ms="404" status="PASS">
+    <test started-at="2024-10-28T15:41:24 IST" name="chromeWindowsLocal1" finished-at="2024-10-28T15:41:25 IST" duration-ms="977">
+      <class name="com.ivis.iportal.script.TC_IportalAutomation">
+        <test-method is-config="true" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.ivis.iportal.script.TC_IportalAutomation@1b68b9a4]" started-at="2024-10-28T15:41:24 IST" name="beforeSuite" finished-at="2024-10-28T15:41:24 IST" duration-ms="186" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@76d05cc9]]>
+                <![CDATA[org.testng.TestRunner@127d7908]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.ivis.iportal.script.TC_ConfigCamera@1dd92fe2]" started-at="2024-10-26T01:26:01 IST" name="beforeClass" finished-at="2024-10-26T01:26:07 IST" duration-ms="6210" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[46.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[local]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Windows 10]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="sitesCreationPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.ivis.iportal.script.TC_IportalAutomation@1b68b9a4]" started-at="2024-10-28T15:41:25 IST" name="sitesCreationPage" data-provider="loginValidation" finished-at="2024-10-28T15:41:25 IST" duration-ms="958" status="FAIL">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void com.ivis.iportal.script.TC_IportalAutomation.sitesCreationPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Throwable] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: sitesCreationPage([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) https://uat1.iviscloud.net/,(java.lang.String) yes,(java.lang.String) sudhir.i,(java.lang.String) Ivis@123,(java.lang.String) Ivis@12345]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void com.ivis.iportal.script.TC_IportalAutomation.sitesCreationPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Throwable] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: sitesCreationPage([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) https://uat1.iviscloud.net/,(java.lang.String) yes,(java.lang.String) sudhir.i,(java.lang.String) Ivis@123,(java.lang.String) Ivis@12345]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:914)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.ivis.iportal.script.LoginValidation.main(LoginValidation.java:19)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.ivis.iportal.script.TC_ConfigCamera@1dd92fe2]" started-at="2024-10-26T01:26:01 IST" name="beforeClass" finished-at="2024-10-26T01:26:07 IST" duration-ms="6349" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[46.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[local]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Windows 10]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.ivis.iportal.script.TC_ConfigCamera@1dd92fe2]" started-at="2024-10-26T01:26:01 IST" name="beforeClass" finished-at="2024-10-26T01:26:07 IST" duration-ms="6379" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[46.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[local]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Windows 10]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="iportalLoginValidation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.ivis.iportal.script.TC_ConfigCamera@1dd92fe2]" started-at="2024-10-26T01:26:07 IST" name="iportalLoginValidation" data-provider="loginValidation" finished-at="2024-10-26T01:26:07 IST" duration-ms="8" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- iportalLoginValidation -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.ivis.iportal.script.TC_ConfigCamera@1dd92fe2]" started-at="2024-10-26T01:26:07 IST" name="afterClass" finished-at="2024-10-26T01:26:09 IST" duration-ms="1998" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method signature="iportalLoginValidation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.ivis.iportal.script.TC_ConfigCamera@1dd92fe2]" started-at="2024-10-26T01:26:07 IST" name="iportalLoginValidation" data-provider="loginValidation" finished-at="2024-10-26T01:26:12 IST" duration-ms="5109" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://uat1.iviscloud.net/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[yes]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[sudhir.i]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Ivis@123]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Ivis@12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- iportalLoginValidation -->
-        <test-method signature="iportalLoginValidation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.ivis.iportal.script.TC_ConfigCamera@1dd92fe2]" started-at="2024-10-26T01:26:07 IST" name="iportalLoginValidation" data-provider="loginValidation" finished-at="2024-10-26T01:26:07 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- iportalLoginValidation -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.ivis.iportal.script.TC_ConfigCamera@1dd92fe2]" started-at="2024-10-26T01:26:07 IST" name="afterClass" finished-at="2024-10-26T01:26:09 IST" duration-ms="1639" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.ivis.iportal.script.TC_ConfigCamera@1dd92fe2]" started-at="2024-10-26T01:26:12 IST" name="afterClass" finished-at="2024-10-26T01:26:12 IST" duration-ms="146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.ivis.iportal.script.TC_ConfigCamera@1dd92fe2]" started-at="2024-10-26T01:26:12 IST" name="afterSuite" finished-at="2024-10-26T01:26:17 IST" duration-ms="5151" status="PASS">
+        </test-method> <!-- sitesCreationPage -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.ivis.iportal.script.TC_IportalAutomation@1b68b9a4]" started-at="2024-10-28T15:41:25 IST" name="afterSuite" finished-at="2024-10-28T15:41:25 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.ivis.iportal.script.TC_ConfigCamera -->
+      </class> <!-- com.ivis.iportal.script.TC_IportalAutomation -->
     </test> <!-- chromeWindowsLocal1 -->
   </suite> <!-- IVIS Automation test suite -->
 </testng-results>
