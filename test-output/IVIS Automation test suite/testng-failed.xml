@@ -7,15 +7,15 @@
     <parameter name="browserVersion" value="46.0"/>
     <parameter name="platformName" value="Windows 10"/>
     <classes>
-      <class name="com.ivis.iportal.script.TC_ConfigCamera">
+      <class name="com.ivis.iportal.script.TC_IportalAutomation">
         <methods>
           <include name="afterSuite"/>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
-          <include name="iportalLoginValidation"/>
           <include name="beforeClass"/>
+          <include name="sitesCreationPage"/>
         </methods>
-      </class> <!-- com.ivis.iportal.script.TC_ConfigCamera -->
+      </class> <!-- com.ivis.iportal.script.TC_IportalAutomation -->
     </classes>
   </test> <!-- chromeWindowsLocal1(failed) -->
 </suite> <!-- Failed suite [IVIS Automation test suite] -->

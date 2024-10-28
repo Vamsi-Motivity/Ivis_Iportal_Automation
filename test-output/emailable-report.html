@@ -9,12 +9,17 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">IVIS Automation test suite</th></tr>
-<tr><td><a href="#t0">chromeWindowsLocal1</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">13,798</td><td></td><td></td></tr>
+<tr><td><a href="#t0">chromeWindowsLocal1</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">977</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">IVIS Automation test suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">chromeWindowsLocal1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.ivis.iportal.script.TC_ConfigCamera</td><td><a href="#m0">iportalLoginValidation</a></td><td rowspan="3">1729886167549</td><td rowspan="3">0</td></tr><tr class="passedeven"><td><a href="#m1">iportalLoginValidation</a></td></tr><tr class="passedeven"><td><a href="#m2">iportalLoginValidation</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">IVIS Automation test suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">chromeWindowsLocal1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.ivis.iportal.script.TC_IportalAutomation</td><td><a href="#m0">sitesCreationPage</a></td><td rowspan="1">1730110285009</td><td rowspan="1">958</td></tr></tbody>
 </table>
-<h2>chromeWindowsLocal1</h2><h3 id="m0">com.ivis.iportal.script.TC_ConfigCamera#iportalLoginValidation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.ivis.iportal.script.TC_ConfigCamera#iportalLoginValidation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.ivis.iportal.script.TC_ConfigCamera#iportalLoginValidation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>https://uat1.iviscloud.net/</td><td>yes</td><td>sudhir.i</td><td>Ivis@123</td><td>Ivis@12345</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>chromeWindowsLocal1</h2><h3 id="m0">com.ivis.iportal.script.TC_IportalAutomation#sitesCreationPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.internal.reflect.MethodMatcherException: 
+[public void com.ivis.iportal.script.TC_IportalAutomation.sitesCreationPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Throwable] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: sitesCreationPage([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) https://uat1.iviscloud.net/,(java.lang.String) yes,(java.lang.String) sudhir.i,(java.lang.String) Ivis@123,(java.lang.String) Ivis@12345]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.ivis.iportal.script.LoginValidation.main(LoginValidation.java:19)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
