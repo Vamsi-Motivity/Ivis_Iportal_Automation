@@ -9,7 +9,7 @@
 		<parameter name="environment" value="local"></parameter>
 
 		 <classes>
-			<class name="com.ivis.iportal.script.TC_ConfigCamera">
+			<class name="com.ivis.iportal.script.TC_IportalAutomation">
 				<methods>
 					<include name="iportalLoginValidation"/>
 				</methods>

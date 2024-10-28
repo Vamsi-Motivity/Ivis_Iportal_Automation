@@ -13,7 +13,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.HashMap;
 
-public class TC_ConfigCamera extends TestBase {
+public class TC_IportalAutomation extends TestBase {
     public static String file_location = System.getProperty("user.dir") + "\\Resources\\IvisUnitConfiguration.xlsx";
 
     public Object[][] arrObj;
