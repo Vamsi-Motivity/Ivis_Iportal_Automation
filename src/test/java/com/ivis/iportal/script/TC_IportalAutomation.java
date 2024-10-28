@@ -28,38 +28,24 @@ public class TC_IportalAutomation extends TestBase {
         arrObj = getExcelData(file_location, "Userlogin");
         return arrObj;
     }
-    @DataProvider(parallel = false)
+  /*  @DataProvider(parallel = false)
     public Object[][] sitesCreationPage() throws IOException {
         // We are creating an object from the excel sheet data by calling a method that
         // reads data from the excel stored locally in our system
         arrObj = getExcelData(file_location, "Sites");
         return arrObj;
-    }
+    }*/
 
     @Test(priority = 0, dataProvider = "loginValidation")
-    public void iportalLoginValidation(String url, String runmode, String user, String pass) throws Throwable {
+    public void iportalLoginValidation(String url, String runmode, String user, String pass, String invalidpass, String customerName,String project, String siteGroup) throws Throwable {
         try {
             if (runmode.equalsIgnoreCase("Yes")) {
 
                 ReportHelper.createTest("Test_" + url, "For User" + user);
                 loginLib lb = new loginLib(WEBDRIVER_THREADLOCAL.get());
-               // lb.invalidLogin(url, user, invalidpassword);
-                lb.validLogin(url, user, pass);
-                System.out.println("test methods executed successfully");
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-    }
-    @Test(priority = 1,dataProvider = "loginValidation")
-    public void sitesCreationPage(String url, String runmode, String user, String pass, String customerName,String project, String siteGroup ) throws Throwable{
-        try {
-            if (runmode.equalsIgnoreCase("Yes")) {
                 createSites cs = new createSites(WEBDRIVER_THREADLOCAL.get());
-                System.out.println("Dead");
-                iportalLoginValidation(url, runmode, user, pass);
+                lb.invalidLogin(url, user, invalidpass);
+                lb.validLogin(url, user, pass);
                 cs.clickSites();
                 cs.addSites(customerName, project, siteGroup);
                 System.out.println("test methods executed successfully");
@@ -70,6 +56,23 @@ public class TC_IportalAutomation extends TestBase {
         }
 
     }
+  /*  @Test(priority = 1,dataProvider = "loginValidation")
+    public void sitesCreationPage(String url, String runmode, String user, String pass, String customerName,String project, String siteGroup) throws Throwable{
+        try {
+            if (runmode.equalsIgnoreCase("Yes")) {
+                //createSites cs = new createSites(WEBDRIVER_THREADLOCAL.get());
+                System.out.println("Dead");
+                *//*iportalLoginValidation(url, runmode, user, pass);
+                cs.clickSites();*//*
+                //s.addSites(customerName, project, siteGroup);
+                System.out.println("test methods executed successfully");
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }*/
 
 
     public synchronized String[][] getExcelData(String fileName, String sheetName) throws IOException {

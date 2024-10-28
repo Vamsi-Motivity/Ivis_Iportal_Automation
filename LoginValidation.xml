@@ -11,8 +11,7 @@
 		 <classes>
 			<class name="com.ivis.iportal.script.TC_IportalAutomation">
 				<methods>
-				<!--	<include name="iportalLoginValidation"/> -->
-					<include name="sitesCreationPage"/>
+					<include name="iportalLoginValidation"/>
 				</methods>
 			 </class>
 		 </classes>
